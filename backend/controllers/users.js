@@ -1,5 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
+const { JWT_SECRET = 'some-secret-key' } = process.env;
 const User = require('../models/user');
 const AuthorizationError = require('../errors/authorizationError');
 const IncorrectDataError = require('../errors/incorrectDataError');
@@ -41,6 +43,8 @@ module.exports.createUser = (req, res, next) => {
           .catch((err) => {
             if (err.name === 'ValidationError') {
               next(new IncorrectDataError('Переданы некорректные данные.'));
+            } else if (err.code === 11000) {
+              next(new CheckRepeatEmailError('При регистрации указан email, который уже существует на сервере.'));
             } else {
               next(err);
             }
@@ -49,8 +53,6 @@ module.exports.createUser = (req, res, next) => {
       .catch((err) => {
         if (err.name === 'ValidationError') {
           next(new IncorrectDataError('Переданы некорректные данные.'));
-        } else if (err.code === 11000) {
-          next(new CheckRepeatEmailError('При регистрации указан email, который уже существует на сервере.'));
         } else {
           next(err);
         }
@@ -141,7 +143,7 @@ module.exports.login = (req, res, next) => {
 
   User.findUserByCredentials(email, password)
     .then((user) => {
-      const token = jwt.sign({ _id: user._id }, 'some-secret-key');
+      const token = jwt.sign({ _id: user._id }, JWT_SECRET);
 
       // вернём токен
       res.send({ token });
