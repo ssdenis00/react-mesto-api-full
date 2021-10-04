@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  padding: 0 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0;
+  }
+}

@@ -1,0 +1,16 @@
+.galary__grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 282px);
+  grid-template-rows: repeat(auto-fill, 361px);
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .galary__grid {
+    column-gap: 17px;
+  }
+}

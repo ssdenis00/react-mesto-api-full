@@ -1,0 +1,19 @@
+.profile__avatar-overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
+  border: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (min-width: 780px) {
+  .profile__avatar-overlay:hover {
+    background: center / 26px url('../../../images/avatar-update.svg') no-repeat rgba(0, 0, 0, 0.8);
+  }
+}

@@ -1,0 +1,25 @@
+.galary__like {
+  width: 22px;
+  height: 19px;
+  background: center / contain url(../../../images/like.svg) no-repeat transparent;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+.galary__like:focus {
+  border: none;
+  outline: none;
+}
+
+.galary__like:active {
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .galary__like:hover {
+    opacity: 0.5;
+  }
+}

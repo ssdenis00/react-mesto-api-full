@@ -1,0 +1,9 @@
+.profile__add-btn-img {
+  width: 16px;
+}
+
+@media (min-width: 768px) {
+  .profile__add-btn-img {
+    width: 22px;
+  }
+}

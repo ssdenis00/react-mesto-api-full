@@ -1,0 +1,17 @@
+.popup__container_type_img {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  max-width: 100%;
+  min-height: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: normal;
+}
+
+.popup__block-img {
+  padding: 0;
+  margin: 0;
+}

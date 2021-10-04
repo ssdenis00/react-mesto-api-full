@@ -1,0 +1,9 @@
+.login-info__link {
+  display: block;
+  text-decoration: none;
+  color: #a9a9a9;
+  text-align: center;
+  margin: 18px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+}

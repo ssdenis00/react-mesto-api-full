@@ -1,0 +1,17 @@
+.popup__form-text {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 5px 0 10px;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+}
+
+.popup__form-text:focus {
+  outline: 0;
+}
+
+.popup__form-text:active {
+  outline: 0;
+}

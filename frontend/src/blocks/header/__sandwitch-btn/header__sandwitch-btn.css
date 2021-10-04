@@ -1,0 +1,15 @@
+.header__sandwitch-btn {
+  cursor: pointer;
+  display: block;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  background: center / contain url("../../../images/menu-btn.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+  .header__sandwitch-btn {
+    display: none;
+  }
+}

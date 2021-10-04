@@ -1,0 +1,13 @@
+.authorization__btn {
+  max-width: 358px;
+  width: 100%;
+  height: 46px;
+}
+
+@media (min-width: 1024px) {
+  .authorization__btn {
+    cursor: pointer;
+    background: #fff;
+    height: 50px;
+  }
+}

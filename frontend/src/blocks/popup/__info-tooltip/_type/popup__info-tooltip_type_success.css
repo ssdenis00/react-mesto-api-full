@@ -1,0 +1,4 @@
+.popup__info-tooltip_type_success {
+  background: center / contain url("../../../../images/succes-icon.svg")
+    no-repeat;
+}

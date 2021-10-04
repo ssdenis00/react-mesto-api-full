@@ -1,0 +1,9 @@
+.profile__text {
+  padding: 0 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .profile__text {
+    padding: 0px 13px 0 0;
+  }
+}

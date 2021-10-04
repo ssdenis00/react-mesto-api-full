@@ -1,0 +1,9 @@
+.authorization_type_login {
+  padding-bottom: 77px;
+}
+
+@media (min-width: 1024px) {
+  .authorization_type_login {
+    padding-bottom: 112px;
+  }
+}

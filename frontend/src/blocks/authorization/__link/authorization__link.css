@@ -1,0 +1,19 @@
+.authorization__link {
+  margin: 20px 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  .authorization__link {
+    margin: 15px 0 0;
+  }
+
+  .authorization__link:hover {
+    opacity: 0.6;
+  }
+}

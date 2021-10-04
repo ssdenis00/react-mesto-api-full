@@ -1,0 +1,11 @@
+.galary {
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  padding: 36px 19px 0;
+}
+
+@media (min-width: 768px) {
+  .galary {
+    padding-top: 50px;
+  }
+}

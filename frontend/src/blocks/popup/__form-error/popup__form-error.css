@@ -1,0 +1,11 @@
+.popup__form-error {
+  visibility: hidden;
+  margin: 5px 0 4px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF0000;
+}
+
+.popup__form-error:last-of-type {
+  margin-bottom: 0;
+}

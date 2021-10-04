@@ -1,0 +1,11 @@
+footer {
+  font-family: 'Inter', sans-serif;
+  color: #545454;
+  padding: 48px 19px 36px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 67px 19px 36px;
+  }
+}
